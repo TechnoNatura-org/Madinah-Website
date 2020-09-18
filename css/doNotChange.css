@@ -1,0 +1,87 @@
+/* JANGAN DIGANTI */
+/* Themes */
+:root {
+    --gray0: #f8f8f8;
+    --gray1: #dbe1e8;
+    --gray2: #b2becd;
+    --gray3: #6c7983;
+    --gray4: #454e56;
+    --gray5: #2a2e35;
+    --gray6: #12181b;
+    --blue: #0084a5;
+    --purple: #a82dd1;
+    --yellow: #fff565;
+    --Text-Header: #fff;
+}
+
+.light {
+    --bg: var(--gray0);
+    --bg-nav: linear-gradient(to right, var(--gray1), var(--gray3));
+    --bg-dropdown: var(--gray0);
+    --text: var(--gray6);
+    --border-color: var(--blue);
+    --bg-solar: var(--yellow);
+    --bg-header: url(../images/light.jpeg);
+    --text-navbar: #fff;
+    --text-navbar-scroll: rgb(255, 255, 255);
+    --text-header: var(--Text-Header);
+    --bg-scroll-thumb: linear-gradient(45deg, var(--gray1), var(--gray3));
+    --p-text: var(--gray4);
+}
+
+.dark {
+    --bg: var(--gray5);
+    --bg-nav: linear-gradient(to right, var(--gray5), var(--gray6));
+    --bg-dropdown: var(--gray6);
+    --text: var(--gray0);
+    --text-header: var(--Text-Header);
+    --border-color: var(--purple);
+    --bg-solar: var(--blue);
+    --bg-header: url(../images/dark.jpeg);
+    --p-text: var(--gray2);
+}
+
+.solar {
+    --gray0: #d4fff7;
+    --gray1: #d0f8f7;
+    --gray2: #80d4f8;
+    --gray3: #2da3c7;
+    --gray4: #3e96a5;
+    --gray5: #005368;
+    --gray6: #003d4c;
+    --P-TEXT: var(--gray2);
+}
+
+
+#dark::before {
+    background: #2a2e35;
+}
+
+#light::before {
+    background: #ffffff;
+}
+
+#solar::before {
+    background: var(--bg-solar);
+}
+
+
+/* Logo Animation */
+
+
+@keyframes color-rotate {
+    from {
+        filter: hue-rotate(0deg);
+    }
+
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+.logo:hover {
+    animation: color-rotate 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

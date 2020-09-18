@@ -1,0 +1,541 @@
+/* little navbar */
+input.checkbox {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    opacity: 0;
+    height: 50px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+input.checkbox:checked ~ .btn_ h3 {
+    transform: rotate(45deg);
+}
+
+input.checkbox:active ~ .btn_ {
+    box-shadow: inset 0px 0px 2px 2px var(--bg);
+}input.checkbox:checked ~ .tool_1 {
+    animation: tool1 .7s forwards ;
+}input.checkbox:not(:checked) ~ .tool_1 {
+    animation: tool1_2 .7s forwards;
+}input.checkbox:checked ~ .tool_2 {
+    animation: tool2 .7s .3s forwards ;
+}input.checkbox:not(:checked) ~ .tool_2 {
+    animation: tool2_2 .7s forwards;
+}input.checkbox:checked ~ .tool_3 {
+    animation: tool3 .7s .6s forwards ;
+}input.checkbox:not(:checked) ~ .tool_3 {
+    animation: tool3_2 .7s forwards;
+}
+
+.btn_ {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    background-color: var(--text);
+    border-radius: 50%;
+    z-index: 667;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.btn_ h3{
+    font-size: 30px;
+    transition: .3s;
+}
+.tool_:hover {
+    box-shadow: 0px 0px 2px 2px var(--text);
+}
+
+.tool_ {
+    position: fixed;
+    background-color: var(--text);
+    width: 50px;
+    right: 10px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border: 2px solid black;
+    box-shadow: 0 3px 2px var(--text);
+    border-radius: 50%;
+    transition: .3s;
+    z-index: 666;
+    transform: scale(0);
+    right: 10px;
+    bottom: 10px;
+}
+/* little navbar */
+
+
+/*Global*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    border: 1px solid var(--text);
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: transparent !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    transition: 500ms ease-in-out, color 1000ms ease-in-out;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+main {
+    padding: 0;
+}
+
+img {
+    margin: 2em 0 0;
+    width: 180px;
+    height: 180px;
+}
+/*end of global*/
+
+
+/* Navbar */
+#navbar {
+    transition: top 0.3s;
+}
+
+.navbar {
+    height: 70px;
+    width: 100%;
+    font-size: 20px;
+    color: var(--text-navbar);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar.sticky {
+    background: var(--bg-nav);
+    font-size: 16px;
+    color: var(--text);
+    height: 55px;
+    animation: animasi .5s;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.navbar.sticky .navbar-nav {
+    justify-content: space-between;
+    padding: 0 70px;
+}
+
+.navbar.sticky .navbar-nav .dropdown {
+    transform: scale(0.8);
+    right: 20px;
+}
+
+.list-nav-links {
+    display: flex;
+}
+
+
+.dropdown {
+    position: absolute;
+    width: 390px;
+    opacity: 0;
+    z-index: 2;
+    background: var(--bg-dropdown);
+    border-top: 2px solid var(--border-color);
+    color: var(--text) !important;
+
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 3rem;
+    margin-top: 2rem;
+    padding: 0.5rem;
+
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.175em 0.5em;
+    transform: translateX(-40%);
+
+    transition: opacity .15s ease-out;
+    
+}
+
+
+.has-dropdown:focus-within .dropdown   {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.dropdown-item a {
+    width: 100%;
+    height: 100%;
+    size: 0.7rem;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.dropdown-item a::before {
+    content: ' ';
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* end of navbar */
+
+
+
+
+
+
+
+/*Welcome section*/
+header {
+    padding-top: 10em;
+    clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0 75%, 0 0);
+    background: var(--bg-header);
+    background-size: cover;
+    background-position: 0 -170px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin-bottom: 1em;
+    padding-bottom: 3.5em;
+    text-align: center;
+    height: 100vh;
+    box-sizing: border-box;
+    color: var(--text-header);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header h1{
+    font-size: 3em;
+}
+
+header p {
+    margin-top: -20px;
+}
+
+.mouse {
+    height: 45px;
+    width: 20px;
+    border: 3px solid var(--text-header);
+    position: absolute;
+    border-radius: 20px;
+    top: 370px;
+}
+
+.mouse::before {
+    content: " ";
+    position: absolute;
+    left:5px;
+    top: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--text-header);
+    animation: mouseAnimasi 1.2s infinite;
+}
+/*end of Welcome section*/
+
+
+
+
+
+/* Our team */
+
+.our-teams {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 30px 20px;
+}
+
+.our-teams .title-parent h2 {
+    font-size: 35px;
+}
+
+.our-teams .title-parent h2::before {
+    content: "";
+    position: absolute;
+    background-color: var(--text);
+    width: 70px;
+    height: 2px;
+    bottom: -5px;
+}
+
+.parent-of-parent-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.parent-of-cards {
+    width: 100%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card {
+    width: 300px;
+    height: 500px;
+    padding: 0 0;
+    border-radius: 20px;
+    border: 3px solid var(--text);
+    position: relative;
+    overflow: hidden;
+    color: rgb(109, 109, 109);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 6px 6px var(--text);
+    transition: .5s;
+    transform: scale(0.9);
+}
+
+.card:hover {
+    transform: scale(1);
+    box-shadow: 0px 20px 6px -15px var(--text);
+}
+
+.card .bg-on-card {
+    position: absolute;
+    top: -50px;
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+    border: 3px solid var(--text);
+     /* disable user if they tryin' to darg image */
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.card .profile {
+    border-radius: 50%;
+    border: 3px solid var(--text);
+    width: 120px;
+    height: 120px;
+    position: relative;
+    top: 95px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card .profile img {
+    width: 150%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+
+    /* disable user if they tryin' to darg image */
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.card .information {
+    position: relative;
+    top: 80px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.contact-on-card {
+    width: 130px;
+    height: 30px;
+    border: 1px solid var(--text);
+    border-radius: 20px;
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: var(--text);
+    transition: .3s;
+}
+
+.contact-on-card:hover {
+    background-color: var(--text);
+    color: var(--bg);
+    transform: scale(1.1);
+}
+
+.card .social-media-icon-on-card {
+    color: var(--text);
+    position: absolute;
+    bottom: 70px;
+    width: 200px;
+    text-align: center;
+    font-size: 23px;
+    transition: .3s;
+}
+
+.social-media-icon-on-card a {
+    position: relative;
+    bottom: -45px;
+    opacity: 0;
+}
+
+.social-media-icon-on-card a:hover {
+    color: var(--p-text);
+}
+
+.card:hover .social-media-icon-on-card a {
+    animation: socialMedia 1s alternate forwards;
+}
+
+.card:not(:hover) .social-media-icon-on-card a {
+    animation: socialMedia2 1s forwards;
+}
+/* end of our team */
+
+.showMoreBtn {
+    width: 200px; 
+    height: 30px; 
+    align-self: center;
+    border-radius: 20px;
+    outline: none;
+    background-color: var(--text);
+    color: var(--bg);
+    cursor: pointer;
+    border: 1px solid var(--text);
+    transition: .3s;
+    font-size: 16px;
+}
+
+.showMoreBtn:hover {
+    background-color: transparent;
+    color: var(--text);
+}
+
+.search {
+    align-self: initial;
+    margin: 0 50px;
+}
+input {
+	outline: none;
+}
+.search input[type=text] {
+	-webkit-appearance: textfield;
+	font-family: inherit;
+	font-size: 100%;
+}
+.search input::-webkit-search-decoration,
+.search input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+
+.search input[type=text] {
+	background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 55px;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+.search input[type=text]:focus {
+	width: 200px;
+	background-color: #fff;
+	border-color: #66CC75;
+	
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+
+.search input:-moz-placeholder {
+	color: #999;
+}
+.search input::-webkit-input-placeholder {
+	color: #999;
+}
+
+/* Demo 2 */
+#demo-2 input[type=text] {
+	width: 15px;
+	padding-left: 10px;
+	color: transparent;
+	cursor: pointer;
+}
+#demo-2 input[type=text]:hover {
+	background-color: #fff;
+}
+#demo-2 input[type=text]:focus {
+	width: 200px;
+	padding-left: 32px;
+	color: #000;
+	background-color: #fff;
+	cursor: auto;
+}
+#demo-2 input:-moz-placeholder {
+	color: transparent;
+}
+#demo-2 input::-webkit-input-placeholder {
+	color: transparent;
+} 
+
+.search-submit {
+    width: 80px;
+    height: 45px !important;
+    border-radius: 20px;
+}

@@ -1,0 +1,50 @@
+[10-Aug-2020 07:54:23 Asia/Jakarta] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ajat8154/public_html/madinah.my.id/search.php on line 54
+[10-Aug-2020 07:54:23 Asia/Jakarta] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/ajat8154/public_html/madinah.my.id/search.php on line 68
+[10-Aug-2020 08:22:24 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1044): Access denied for user 'ajat8154_ns23'@'localhost' to database 'ajat8154_Nama' in /home/ajat8154/public_html/madinah.my.id/search.php on line 27
+[10-Aug-2020 08:22:24 Asia/Jakarta] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ajat8154/public_html/madinah.my.id/search.php on line 37
+[10-Aug-2020 08:22:24 Asia/Jakarta] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/ajat8154/public_html/madinah.my.id/search.php on line 45
+[10-Aug-2020 08:23:19 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1044): Access denied for user 'ajat8154_ns23'@'localhost' to database 'ajat8154_Konten' in /home/ajat8154/public_html/madinah.my.id/search.php on line 27
+[10-Aug-2020 08:23:19 Asia/Jakarta] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ajat8154/public_html/madinah.my.id/search.php on line 37
+[10-Aug-2020 08:23:19 Asia/Jakarta] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/ajat8154/public_html/madinah.my.id/search.php on line 45
+[10-Aug-2020 08:23:21 Asia/Jakarta] PHP Warning:  mysqli::__construct(): (HY000/1044): Access denied for user 'ajat8154_ns23'@'localhost' to database 'ajat8154_Konten' in /home/ajat8154/public_html/madinah.my.id/search.php on line 27
+[10-Aug-2020 08:23:21 Asia/Jakarta] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/ajat8154/public_html/madinah.my.id/search.php on line 37
+[10-Aug-2020 08:23:21 Asia/Jakarta] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/ajat8154/public_html/madinah.my.id/search.php on line 45
+[10-Aug-2020 09:03:22 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/ajat8154/public_html/madinah.my.id/search.php on line 63
+[10-Aug-2020 09:03:22 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/ajat8154/public_html/madinah.my.id/search.php on line 63
+[10-Aug-2020 09:03:29 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/ajat8154/public_html/madinah.my.id/search.php on line 63
+[18-Aug-2020 10:33:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function execute() on boolean in /home/ajat8154/public_html/madinah.my.id/ambil_komentar.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/ajat8154/public_html/madinah.my.id/ambil_komentar.php on line 9
+[18-Aug-2020 10:33:53 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function execute() on boolean in /home/ajat8154/public_html/madinah.my.id/ambil_komentar.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/ajat8154/public_html/madinah.my.id/ambil_komentar.php on line 9
+[18-Aug-2020 10:34:15 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function execute() on boolean in /home/ajat8154/public_html/madinah.my.id/ambil_komentar.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/ajat8154/public_html/madinah.my.id/ambil_komentar.php on line 9
+[18-Aug-2020 10:34:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/ajat8154/public_html/madinah.my.id/tambah_komentar.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ajat8154/public_html/madinah.my.id/tambah_komentar.php on line 12
+[18-Aug-2020 10:35:19 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function execute() on boolean in /home/ajat8154/public_html/madinah.my.id/ambil_komentar.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/ajat8154/public_html/madinah.my.id/ambil_komentar.php on line 9
+[18-Aug-2020 10:35:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/ajat8154/public_html/madinah.my.id/tambah_komentar.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ajat8154/public_html/madinah.my.id/tambah_komentar.php on line 12
+[18-Aug-2020 10:36:32 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/ajat8154/public_html/madinah.my.id/tambah_komentar.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ajat8154/public_html/madinah.my.id/tambah_komentar.php on line 12
+[18-Aug-2020 10:36:41 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/ajat8154/public_html/madinah.my.id/tambah_komentar.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ajat8154/public_html/madinah.my.id/tambah_komentar.php on line 12
+[18-Aug-2020 10:37:26 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on boolean in /home/ajat8154/public_html/madinah.my.id/tambah_komentar.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/ajat8154/public_html/madinah.my.id/tambah_komentar.php on line 12

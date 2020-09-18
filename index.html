@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en-id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    7 Madinah Class
+  </title>
+  <link href="#" rel="shortcut icon" />
+  <!-- Site Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="http://arsasatria.my.id/logo">
+  <meta property="og:image:type" content="image/png" data-dynamic="true">
+  <meta property="og:image:width" content="960" data-dynamic="true">
+  <meta property="og:image:height" content="720" data-dynamic="true">
+  <meta property="og:description" content="Official Website of Techno 7, Madinah Class">
+  <meta property="og:site_name" content="7 Madinah Class">
+  <FTP connect-server="www.ftp.arsa:Arsa-3" user="account:aldhan" ok="1209.877.AO"></FTP>
+  <!-- End Site Meta -->
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* The Modal (background) */
+    .modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      padding-top: 100px;
+      /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+      position: relative;
+      color: var(--p-text);
+      top: 100px;
+      background: var(--bg-nav);
+      margin: auto;
+      padding: 0;
+      border: 1px solid #888;
+      width: 80%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 20px;
+      overflow: hidden;
+      -webkit-animation-name: animatetop;
+      -webkit-animation-duration: 0.4s;
+      animation-name: animatetop;
+      animation-duration: 0.4s
+    }
+
+
+    /* Add Animation to popup */
+    @-webkit-keyframes animatetop {
+      from {
+        top: -300px;
+        opacity: 0
+      }
+
+      to {
+        top: 100px;
+        opacity: 1
+      }
+    }
+
+    @keyframes animatetop {
+      from {
+        top: -300px;
+        opacity: 0;
+      }
+
+      to {
+        top: 100px;
+        opacity: 1;
+      }
+    }
+
+
+
+    /* The Close Button */
+    .close {
+      color: white;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .modal-header {
+      padding: 2px 16px;
+      background-color: var(--bg-nav);
+      color: var(--text);
+    }
+
+    .modal-body {
+      padding: 2px 16px;
+    }
+
+    .modal-footer {
+      padding: 2px 16px;
+      background-color: var(--bg-nav);
+      color: var(--text);
+    }
+  </style>
+
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" />
+  <link rel="stylesheet" href="//arsasatria.my.id/font">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/left.tooltip.css" />
+  <link rel="stylesheet" href="css/doNotChange.css">
+  <link rel="stylesheet" href="css/mediaQuery.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/roundbtn.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/css/sharemodal.css">
+  <script defer src="app.js">
+  </script>
+  <script src="https://kit.fontawesome.com/f596e229f7.js" crossorigin="anonymous"></script>
+  <script src="//script.arsasatria.my.id/fontawesome.pro" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+
+<body class="light">
+  <!-- little navbar -->
+  <div class="little_navbar_">
+    <input type="checkbox" name="" id="" title="More Tools" class="checkbox">
+
+
+    <!-- Trigger/Open The Share Modal -->
+    <a id="shareBtn" onclick="changeS();" class="tool_1 tool_" style="cursor: pointer;">
+      <i class="material-icons" title="Share" style="font-size: 25px; color: var(--bg);">&#xe80d;</i>
+    </a>
+    <a href="https://madinah.my.id/#sll-secure-updated" class="tool_2 tool_" style="cursor: pointer;">
+      <i class="material-icons" title="Update Web SSL Security" style="font-size: 25px; color: var(--bg);">https</i>
+    </a>
+    <a href="mailto:kelas@madinah.my.id" class="tool_3 tool_" style="cursor: pointer;" onclick="contact();">
+      <i class="far fa-envelope" title="Contact Us!" style=" font-size: 25px; color: var(--bg);"></i>
+    </a>
+    <div class="btn_" title="More Tools">
+      <h3 style="color: var(--bg)" title="More Tools">+</h3>
+    </div>
+  </div>
+  <!-- little navbar -->
+
+  <!-- Navbar -->
+
+  <nav class="navbar" id="navbar">
+    <ul class="navbar-nav">
+      <a href="">
+        <h3>7 Madinah Class</h3>
+      </a>
+
+
+      <div class="list-nav-links">
+        <a href="#">
+          <li class="nav-item" style="margin: 0 20px;">Home</li>
+        </a>
+
+        <a onclick="reload();">
+          <li class="nav-item" style="margin: 0 20px;">Reload</li>
+        </a>
+
+        <a href="#" id="robot">
+          <li class="nav-item" style="margin: 0 20px;">Leo Assistant</li>
+        </a>
+        <!-- Dropdown -->
+        <li class="nav-item has-dropdown">
+          <a href="#" style="margin: 0 20px;">Theme</a>
+          <ul class="dropdown" id="myDropdown">
+            <li class="dropdown-item">
+              <a id="light" href="#">light</a>
+            </li>
+            <li class="dropdown-item">
+              <a id="dark" href="#">dark</a>
+            </li>
+            <li class="dropdown-item">
+              <a id="solar" href="#">solarize</a>
+            </li>
+          </ul>
+        </li>
+      </div>
+
+    </ul>
+  </nav>
+
+  <header style="margin-bottom: 150px">
+    <h1>Hello There, We are Madinah Class!</h1>
+    <a href="#about">
+      <div class="mouse"></div>
+    </a>
+    <div>
+      <p>Grade 7, Madinah | Techno Natura</p>
+    </div>
+  </header>
+  <div id="rbtmdl" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Welcome To Leo Assistant!</h2>
+      </div>
+      <div class="modal-body">
+        <p>How Can I Help You?</p>
+        <p>Please Enter a Command below...</p>
+        <input id="rbtInput" placeholder="Enter Command Here!" type="text"><button
+          onclick="validateCmd()">Submit</button>
+      </div>
+      <p id="rbtext"></p>
+
+      <div class="modal-footer">
+        <h3>https://madinah.my.id</h3>
+      </div>
+    </div>
+
+  </div>
+
+  <main>
+    <section class="our-teams">
+      <div class="title-parent" style="padding-left: 50px;">
+        <h2 class="title" style="position: relative;">Our Team</h2>
+      </div>
+      <!-- Search By Database - Start -->
+      <div class="search" style="text-align: center;">
+        <h4>Find our Teams</h4>
+        <form method="get" action="/search.php" id="demo-2">
+          <input type="text" name="Nama" placeholder="Enter A Nickname!">
+
+        </form>
+      </div>
+      <!-- End Search By Database -->
+      <div class="parent-of-parent-cards">
+        <div class="parent-of-cards">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1580638858617-ed8f4c3fa6d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1123&q=80"
+              alt="" style="width: 100%; height: 40%;" class="bg-on-card">
+            <div class="profile">
+              <img
+                src="https://docs.google.com/drawings/d/e/2PACX-1vTBsvdzqGNLxyCtaAabMcvgU1mD5Y0eariInP27DBWAVklj0r6RURxyTNMnC4utbuNLbquI_OlO_FLC/pub?w=945&h=945"
+                alt="" style="width: 100%;">
+            </div>
+            <div class="information">
+              <h2 style="color: var(--text); font-size: 24px;">Kak Nabila</h2>
+              <p style="margin-top: -10px; color: var(--p-text); font-size: 14px;">-Mentor Kelas Madinah-</p>
+              <p style="text-align: center; margin-top: -5px; color: var(--text); padding: 0 10px; font-size: 15px;">
+              </p>
+            </div>
+            <a href="" class="contact-on-card">Contact</a>
+            <div class="social-media-icon-on-card" style="z-index: 999;">
+              <a onclick="socialNotSet();"><i class="fa fa-cloud"></i></a>
+              <a onclick="socialNotSet();"><i class="fa fa-envelope-o"></i></a>
+              <a onclick="socialNotSet();"><i class="fa fa-link"></i></a>
+              <a onclick="socialNotSet();"><i class="fa fa-telegram"></i></a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1580638858617-ed8f4c3fa6d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1123&q=80"
+              alt="" style="width: 100%; height: 40%;" class="bg-on-card">
+            <div class="profile">
+              <img
+                src="https://docs.google.com/drawings/d/e/2PACX-1vQraVu25mD433BTbplJCPUiWoT3gQoBpyhbMvqlgZwvuuR_I6FY1hFZ0RNLGiWKJAHE1lBJ5rp-poNV/pub?w=794&h=454"
+                alt="">
+            </div>
+            <div class="information">
+              <h2 style="color: var(--text); font-size: 24px;">Taufiq</h2>
+              <p style="margin-top: -10px; color: var(--p-text); font-size: 14px;">Pembuat Robot</p>
+              <p name="cita-cita"
+                style="text-align: center; margin-top: -5px; color: var(--text); padding: 0 10px; font-size: 15px;">
+              </p>
+            </div>
+            <a href="https://madinah.my.id/#" class="contact-on-card">Contact</a>
+            <div class="social-media-icon-on-card" style="z-index: 999;">
+              <a onclick="socialNotSet();"><i class="fa fa-cloud"></i></a>
+              <a onclick="socialNotSet();"><i class="fa fa-envelope-o"></i></a>
+              <a onclick="socialNotSet();"><i class="fa fa-link"></i></a>
+              <a onclick="socialNotSet();"><i class="fa fa-telegram"></i></a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1580638858617-ed8f4c3fa6d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1123&q=80"
+              alt="" style="width: 100%; height: 40%;" class="bg-on-card">
+            <div class="profile">
+              <img
+                src="https://cdn5.telesco.pe/file/tv5DgVTK-xy6owIS_Q3r41yf5p7hR7WBqmJ2aN4lm8OmZ_vyM7MW8HBECIe9ldlyXYHSZ4fDj3BQEsXs0xhs56ng7e3g5jqJTfs6aNhFAU3X9D-QU5K_10F87gm4BWN823cjguLpUjr6UP-Pqjgv2cxmBZACncLzuIRMlgUugDVwIHUechgcprmOW_nlIhMyGX0qRH5uK1SQknUnsSMuiiCpW8blFif0Ma4UV275XqlhKYrzHLHORGd_P33PWx9K6Dibsp6mBGEnD9tR3SJoON9wb_X66iaO5z3GLTKforqpiZV66mUHUy0pduG0nHKaStFU0rIqoYdSIHJXfDJzXA.jpg"
+                alt="" style="width: 100%;">
+            </div>
+            <div class="information">
+              <h2 style="color: var(--text); font-size: 24px;">Aldhan</h2>
+              <p style="margin-top: -10px; color: var(--p-text); font-size: 14px;text-align: center">FullStack
+                Developer | Membuat
+                perusahaan technology</p>
+              <p style="text-align: center; margin-top: -5px; color: var(--text); padding: 0 10px; font-size: 15px;">
+                "Chill"</p>
+            </div>
+            <a href="mailto:aldhaneka@gmail.com" target="_blank" class="contact-on-card">Contact</a>
+            <div class="social-media-icon-on-card" style="z-index: 999;">
+              <a onclick="socialNotSet();"><i class="fa fa-twitter"></i></a>
+              <a href="https://forum.freecodecamp.org/u/aldhaneka" target="_blank"><i
+                  class="fa fa-free-code-camp"></i></a>
+              <a href="https://github.com/Aldhanekaa" target="_blank"><i class="fa fa-github"></i></a>
+              <a href="https://codepen.io/aldhaneka" target="_blank"><i class="fa fa-codepen"></i></a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1580638858617-ed8f4c3fa6d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1123&q=80"
+              alt="" style="width: 100%; height: 40%;" class="bg-on-card">
+            <div class="profile">
+              <img src="https://arsasatria.my.id/logo" alt="" style="">
+            </div>
+            <div class="information">
+              <h2 style="color: var(--text); font-size: 24px;">Arsa</h2>
+              <p style="margin-top: -10px; color: var(--p-text); font-size: 14px;">Programmer</p>
+              <p style="text-align: center; margin-top: -5px; color: var(--text); padding: 0 10px; font-size: 15px;">
+                "Programmer akan terus ada sampai hari kiamat. Karena robot tidak mungkin memprogram diri sendiri..."
+              </p>
+            </div>
+            <a href="mailto:arsa@arsasatria.my.id" class="contact-on-card">Contact</a>
+            <div class="social-media-icon-on-card" style="z-index: 999;">
+              <a href="https://cloud.arsasatria.my.id" style="color:blue;"><i class="fa fa-cloud"></i></a>
+              <a href="mailto:arsa@arsasatria.my.id" style="color:blue;"><i class="fa fa-envelope-o"></i></a>
+              <a href="https://arsasatria.my.id" style="color:blue;"><i class="fa fa-link"></i></a>
+              <a href="https://t.me/ArsaSatria" style="color:blue;"><i class="fa fa-telegram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div id="parent-showmore-of-parent-cards" style="display: none;">
+          <div class="parent-of-cards">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1580638858617-ed8f4c3fa6d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1123&q=80"
+                alt="" style="width: 100%; height: 40%;" class="bg-on-card">
+              <div class="profile">
+                <img
+                  src="https://docs.google.com/drawings/d/e/2PACX-1vQNhYbgCb6P02_wWK5IhNNVmQb4j5FbsBdU5yXx1vTDcbrllkM0MqQDQTxmkkVsQ6YOriOrv9-iAHEL/pub?w=342&h=529"
+                  alt="" style="width:342.05px;height:529.13px;top:-165px;right:-130px;">
+              </div>
+              <div class="information">
+                <h2 style="color: var(--text); font-size: 24px;">Sasa</h2>
+                <p style="margin-top: -10px; color: var(--p-text); font-size: 14px;">Wartawan / Reporter</p>
+                <p style="text-align: center; margin-top: -5px; color: var(--text);">"Semoga level 7 Madinah kompak
+                  selaluuu"</p>
+              </div>
+              <a href="https://madinah.my.id/#" class="contact-on-card">Contact</a>
+              <div class="social-media-icon-on-card" style="z-index: 999;">
+                <a onclick="socialNotSet();"><i class="fa fa-facebook"></i></a>
+                <a onclick="socialNotSet();"><i class="fa fa-twitter"></i></a>
+                <a onclick="socialNotSet();"><i class="fa fa-github"></i></a>
+                <a onclick="socialNotSet();"><i class="fa fa-codepen"></i></a>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1580638858617-ed8f4c3fa6d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1123&q=80"
+                alt="" style="width: 100%; height: 40%;" class="bg-on-card">
+              <div class="profile">
+                <img
+                  src="https://docs.google.com/drawings/d/e/2PACX-1vRWOSM-rSlWalGDKFmfZ9Xn_WkfOcgdWpi924jiAr_1AdDK4ZKJrw6rLU5EN2pXkM4gY8nW0dxf_har/pub?w=794&h=529"
+                  alt="" style="left: -20px;">
+              </div>
+              <div class="information">
+                <h2 style="color: var(--text); font-size: 24px;">Kayla</h2>
+                <p style="margin-top: -10px; color: var(--p-text); font-size: 14px;">Pembuat Robot</p>
+                <p
+                  style="text-align: center; margin-top: -5px; color: var(--text); padding: 0 10px; font-size: 13.5px;">
+                  "Kamu tidak perlu menjadi hebat untuk memulai sesuatu. Lakukan sekarang dan jangan pernah menunda
+                  karena kesempatan mungkin tidak datang dua kali"</p>
+              </div>
+              <a href="" class="contact-on-card">Contact</a>
+              <div class="social-media-icon-on-card" style="z-index: 999;">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-github"></i></a>
+                <a href=""><i class="fa fa-codepen"></i></a>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1580638858617-ed8f4c3fa6d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1123&q=80"
+                alt="" style="width: 100%; height: 40%;" class="bg-on-card">
+              <div class="profile">
+                <img
+                  src="https://docs.google.com/drawings/d/e/2PACX-1vT7pJGO4nZXax4ywCaoggRcbXVMHdE0d8o0MB376NcusIPJX3QgoviZHfpu1ej2m3dg9zuM-IZlQFLo/pub?w=945&h=945"
+                  alt="" style="width: 100%;">
+              </div>
+              <div class="information">
+                <h2 style="color: var(--text); font-size: 24px;">Yodha</h2>
+                <p style="margin-top: -10px; color: var(--p-text); font-size: 12px; text-align: center;">Video Editor
+                </p>
+                <p style="text-align: center; margin-top: -5px; color: var(--text); padding: 0 10px; font-size: 15px;">
+                  "Janganlah Menyerah
+                  Karena Masa Depan
+                  Menunggu kalian"</p>
+              </div>
+              <a href="https://madinah.my.id/#" class="contact-on-card">Contact</a>
+              <div class="social-media-icon-on-card" style="z-index: 999;">
+                <a onclick="socialNotSet();"><i class="fa fa-facebook"></i></a>
+                <a onclick="socialNotSet();"><i class="fa fa-twitter"></i></a>
+                <a onclick="socialNotSet();"><i class="fa fa-github"></i></a>
+                <a onclick="socialNotSet();" <i class="fa fa-codepen"></i></a>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1580638858617-ed8f4c3fa6d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1123&q=80"
+                alt="" style="width: 100%; height: 40%;" class="bg-on-card">
+              <div class="profile">
+                <img src="https://www.shareicon.net/data/128x128/2016/05/24/770117_people_512x512.png" alt=""
+                  style="width: 100%;">
+              </div>
+              <div class="information">
+                <h2 style="color: var(--text); font-size: 24px;">Nabil</h2>
+                <p style="margin-top: -10px; color: var(--p-text); font-size: 14px;">Pemain Basket</p>
+                <p style="text-align: center; margin-top: -5px; color: var(--text); padding: 0 10px; font-size: 15px;">
+                  "saling akrab aja kedepan nya dan juga gk ada permasalahan kalau bisa"</p>
+              </div>
+              <a href="" class="contact-on-card">Contact</a>
+              <div class="social-media-icon-on-card" style="z-index: 999;">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-github"></i></a>
+                <a href=""><i class="fa fa-codepen"></i></a>
+              </div>
+            </div>
+
+          </div>
+          <div class="parent-of-cards">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1580638858617-ed8f4c3fa6d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1123&q=80"
+                alt="" style="width: 100%; height: 40%;" class="bg-on-card">
+              <div class="profile">
+                <img
+                  src="https://docs.google.com/drawings/d/e/2PACX-1vT4xQHvGVX1HqG6Ft-O8nQOhGUJz8crOGXnEoq3v-BKFG3R9C-vHAUkaLF9gMOp0PHfSubcvAt7NDZA/pub?w=378&h=378"
+                  alt="" style="height:110%">
+              </div>
+              <div class="information">
+                <h2 style="color: var(--text); font-size: 24px;">Abi</h2>
+                <p style="margin-top: -10px; color: var(--p-text); font-size: 12px; text-align: center;">Pilot</p>
+                <p style="text-align: center; margin-top: -5px; color: var(--text); padding: 0 10px; font-size: 15px;">
+                  "Susah di awal, bahagia di akhir."</p>
+              </div>
+              <a href="https://madinah.my.id/#" class="contact-on-card">Contact</a>
+              <div class="social-media-icon-on-card" style="z-index: 999;">
+                <a onclick="socialNotSet();"><i class="fa fa-facebook"></i></a>
+                <a onclick="socialNotSet();"><i class="fa fa-twitter"></i></a>
+                <a onclick="socialNotSet();"><i class="fa fa-github"></i></a>
+                <a onclick="socialNotSet();" <i class="fa fa-codepen"></i></a>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1580638858617-ed8f4c3fa6d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1123&q=80"
+                alt="" style="width: 100%; height: 40%;" class="bg-on-card">
+              <div class="profile">
+                <img
+                  src="https://docs.google.com/drawings/d/e/2PACX-1vR8-Hc10qfzqL7Y5Sp3tvBgB2-TKmYs34QmCvWFPH-GcU9IdEonCw9x04VNWw4bd7ygdPXMrVOS-JfG/pub?w=960&h=720"
+                  alt="" style="width:296%;height:272%;bottom:-100px;">
+              </div>
+              <div class="information">
+                <h2 style="color: var(--text); font-size: 24px;">Asyilah</h2>
+                <p style="margin-top: -10px; color: var(--p-text); font-size: 14px;">Pengusaha Musik (Agensi Artis)</p>
+                <p
+                  style="text-align: center; margin-top: -5px; color: var(--text); padding: 0 10px; font-size: 13.5px;">
+                  "rajinlah belajar agar kalian berhasil."</p>
+              </div>
+              <a href="https://madinah.my.id/#" class="contact-on-card">Contact</a>
+              <div class="social-media-icon-on-card" style="z-index: 999;">
+                <a onclick="socialNotSet();"><i class="fa fa-facebook"></i></a>
+                <a onclick="socialNotSet();"><i class="fa fa-twitter"></i></a>
+                <a onclick="socialNotSet();"><i class="fa fa-github"></i></a>
+                <a onclick="socialNotSet();"><i class="fa fa-codepen"></i></a>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1580638858617-ed8f4c3fa6d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1123&q=80"
+                alt="" style="width: 100%; height: 40%;" class="bg-on-card">
+              <div class="profile">
+                <img
+                  src="https://docs.google.com/drawings/d/e/2PACX-1vT_xNf0Ar9I-aJ4WdI5s0oAdd-jueDqF09CUHb9yddMjfoY0HA2Ns1c-vVCixcW5KbSOrJuX8h_tBMk/pub?w=945&h=945"
+                  alt="" style="width: 200%;height:200%;bottom:-95px;left:-25px">
+              </div>
+              <div class="information">
+                <h2 style="color: var(--text); font-size: 24px;">Altaf</h2>
+                <p style="margin-top: -10px; color: var(--p-text); font-size: 12px; text-align: center;">Pengusaha</p>
+                <p style="text-align: center; margin-top: -5px; color: var(--text); padding: 0 10px; font-size: 15px;">
+                  "Ke gagalan adalah jalan menuju ke berhasilan"</p>
+              </div>
+              <a href="https://madinah.my.id/#" class="contact-on-card">Contact</a>
+              <div class="social-media-icon-on-card" style="z-index: 999;">
+                <a onclick="socialNotSet();"><i class="fa fa-facebook"></i></a>
+                <a onclick="socialNotSet();"><i class="fa fa-twitter"></i></a>
+                <a onclick="socialNotSet();"><i class="fa fa-github"></i></a>
+                <a onclick="socialNotSet();" <i class="fa fa-codepen"></i></a>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1580638858617-ed8f4c3fa6d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1123&q=80"
+                alt="" style="width: 100%; height: 40%;" class="bg-on-card">
+              <div class="profile">
+                <img src="#imageprofile" alt="" style="width: 100%;">
+              </div>
+              <div class="information">
+                <h2 style="color: var(--text); font-size: 24px;">Dzaki</h2>
+                <p style="margin-top: -10px; color: var(--p-text); font-size: 14px;">Arsitek</p>
+                <p style="text-align: center; margin-top: -5px; color: var(--text); padding: 0 10px; font-size: 15px;">
+                </p>
+              </div>
+              <a href="https://madinah.my.id/#" class="contact-on-card">Contact</a>
+              <div class="social-media-icon-on-card" style="z-index: 999;">
+                <a onclick="socialNotSet();"><i class="fa fa-facebook"></i></a>
+                <a onclick="socialNotSet();"><i class="fa fa-twitter"></i></a>
+                <a onclick="socialNotSet();"><i class="fa fa-github"></i></a>
+                <a onclick="socialNotSet();"><i class="fa fa-codepen"></i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <button onclick="showMoreBtn_showLessBtn();" id="showMoreBtn" class="showMoreBtn">Show More</button>
+      </div>
+    </section>
+
+    <hr />
+    <p style="text-align:center;font-family:Nunito Black;">Link Zoom Kelas:</p>
+
+    <p></p>
+
+    <p style="text-align:center"><button class="btn info" onclick="ZoomApps();">Join Zoom (Apps)</button>&nbsp;<button
+        class="btn success" onclick="ZoomBrowser();">Join Zoom (Browser)</button></p>
+
+    <hr />
+
+    <p style="text-align:center;font-family:Nunito Black;">Bookmarked Link & Tools <i
+        class="fas fa-bookmark"></i>&nbsp;<i class="fas fa-wrench"></i></p>
+
+    <p></p>
+
+    <p style="text-align:center"><button class="btn success" onclick="txt();">Text Editor &nbsp;<i
+          class="fas fa-wrench"></i></button>&nbsp;<button class="btn info" onclick="QuranKemenag();">Quran Kemenag
+        &nbsp;<i class="far fa-bookmark"></i></button></p>
+
+    <p style="color:transparent">.</p>
+    <p style="color:transparent">.</p>
+    <p style="color:transparent">.</p>
+    <p style="color:transparent">.</p>
+    <p style="color:transparent">.</p>
+
+    <p><iframe user="AR0001+get.site" token="PNP-AR-0001MD-32g8nv8s-NL" anonymous="enable" id="Newsletter"
+        src="https://arsasatria.my.id/newsletter/madinah.index.php" seal="Arsa 2.8 Form Secure"
+        style="width:100%;height:100px;border:none"></iframe></p>
+
+    <div style="
+    position: fixed; 
+    bottom: 0; 
+    left: 20px; 
+    z-index: 999;
+    " class="clock">
+      <h3 style="color:var(--text);font-family: Nunito Black" id="clock5387"></h3>
+    </div>
+
+  </main>
+
+  <script>
+    function startTime() {
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('clock5387').innerHTML =
+        h + ":" + m + ":" + s;
+      var t = setTimeout(startTime, 500);
+    }
+
+    function checkTime(i) {
+      if (i < 10) {
+        i = "0" + i
+      }; // add zero in front of numbers < 10
+      return i;
+    }
+  </script>
+  <script>
+    var myVar = setInterval(myTimer, 1000);
+
+    function myTimer() {
+      var d = new Date();
+      document.getElementById("clock5387").innerHTML = d.toLocaleTimeString();
+    }
+  </script>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("rbtmdl");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("robot");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+  <script>
+    function validateCmd() {
+      var letter = document.getElementById("rbtInput").value;
+      var text;
+
+      // If the letter is "command"
+      if (letter === "zoom") {
+        window.location.href = "zoommtg://zoom.us/join?action=join&confno=87578258443";
+
+      }
+      if (letter === "arsa") {
+        window.open("https://arsasatria.my.id");
+
+      }
+      if (letter === "aldhan") {
+        window.open("https://bit.ly/aldhanekawebsite");
+
+      }
+      if (letter === "classroom") {
+        window.open("https://classroom.google.com/u/0/c/MTE4NDI1MDc5NDY0");
+
+        // If the letter is "b" or "d"
+      } else if (letter === "b" || letter === "d") {
+        text = "Close, but not close enough.";
+
+        // If the letter is anything else
+      } else {
+        text = "Sorry, Its Not A Command..";
+      }
+      document.getElementById("rbtext").innerHTML = text;
+    }
+  </script>
+  <script>
+    function socialNotSet() {
+      alert("Social Button Doesnt Set Up by\nThis People!\n- https://madinah.my.id -");
+    }
+
+    function reload() {
+      location.reload();
+    }
+
+    function ZoomApps() {
+      window.location.href =
+        "zoommtg://zoom.us/join?action=join&confno=87578258443&pwd=UmowQktiUVJQL0ErV3ZlQVgzaEg1Zz09";
+    }
+
+    function ZoomBrowser() {
+      window.open("https://zoom.us/wc/join/87578258443")
+    }
+
+    function txt() {
+      window.open("https://madinah.my.id/txt")
+    }
+
+    function QuranKemenag() {
+      window.open("https://quran.kemenag.go.id")
+    }
+  </script>
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
+
+
+  <!-- The Share Modal -->
+  <div id="shareModal" class="smodal">
+
+    <!-- Modal content -->
+    <div class="smodal-content">
+      <span class="shareclose">&times;</span>
+      <h1>Share This Web</h1>
+      <h3 style="color:blue;"><a href="https://arsasatria.my.id/direct/wa.madinah" target="popup"
+          onclick="window.open('https://arsasatria.my.id/direct/wa.madinah','popup','width=600,height=600'); return false;"><i
+            class="fab fa-whatsapp fa-3x"></i></a>&nbsp;&nbsp;
+        <a href="https://arsasatria.my.id/direct/mail.madinah" target="popup"
+          onclick="window.open('https://arsasatria.my.id/direct/mail.madinah','popup','width=600,height=600'); return false;"><i
+            class="far fa-envelope fa-3x"></i></a>&nbsp;&nbsp;
+        <a href="https://arsasatria.my.id/direct/tg.madinah" target="popup"
+          onclick="window.open('https://arsasatria.my.id/direct/tg.madinah','popup','width=600,height=600'); return false;"><i
+            class="fab fa-telegram-plane fa-3x"></i></a>&nbsp;&nbsp;
+        <a href="https://arsasatria.my.id/direct/fb.madinah" target="popup"
+          onclick="window.open('https://arsasatria.my.id/direct/fb.madinah','popup','width=600,height=600'); return false;"><i
+            class="fab fa-facebook-f fa-3x"></i></a>&nbsp;&nbsp;
+
+      </h3>
+      <hr>
+      <p>Or Copy This Link</p>
+      <input type="text" onchange="changeS();" value="https://madinah.my.id" id="myInput">
+
+      <div class="tooltip">
+        <button onclick="copytxt()" onmouseout="outFunc()" id="copyBtn">
+          <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+          Copy URL
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="js/app.js"></script>
+  <script>
+    // Get the modal
+    var smodal = document.getElementById("shareModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("shareBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("shareclose")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+      smodal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      smodal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == smodal) {
+        smodal.style.display = "none";
+      }
+    }
+  </script>
+  <script>
+    function copytxt() {
+      var copyText = document.getElementById("myInput");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+
+      var tooltip = document.getElementById("myTooltip");
+      tooltip.innerHTML = "Copied: " + copyText.value;
+    }
+
+    function outFunc() {
+      var tooltip = document.getElementById("myTooltip");
+      tooltip.innerHTML = "Copy to clipboard";
+    }
+  </script>
+  <script>
+    var inputS = document.getElementById("myInput");
+
+    function changeS() {
+      document.getElementById("myInput").value = "https://madinah.my.id";
+
+    }
+  </script>
+</body>
+
+</html>

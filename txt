@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+  <title>Online Text Editor</title>
+  <link href="#" rel="shortcut icon" />
+  
+<!-- The three following lines — trust me — we need this-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <!-- some minimal design (not necessary)-->
+  <style type="text/css">
+    body{
+      text-align: left;
+      margin: 10;
+      font-family: Verdana, Arial, sans-serif;
+      font-size: 16px;
+    }
+  </style>
+<style type="text/css">.btn {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    }
+ 
+    /* Green */
+    .success {
+    border-color: #4CAF50;
+    color: green;
+    }
+
+    .success:hover {
+    background-color: #4CAF50;
+    color: white;
+    }
+
+    /* Blue */
+    .info {
+    border-color: #2196F3;
+    color: dodgerblue
+    }
+
+    .info:hover {
+    background: #2196F3;
+    color: white;
+    }
+
+    /* Orange */
+    .warning {
+    border-color: #ff9800;
+    color: orange;
+    }
+
+    .warning:hover {
+    background: #ff9800;
+    color: white;
+    } 
+
+    /* Red */
+    .danger {
+    border-color: #f44336;
+    color: red
+    }
+
+    .danger:hover {
+    background: #f44336;
+    color: white;
+    }
+
+    /* Gray */
+    .default {
+    border-color: #e7e7e7;
+    color: black;
+    }
+
+    .default:hover {
+    background: #e7e7e7;
+    }
+    /* cyan */
+    .my {
+    border-color: #00ffff;
+    background-color: #00ffff; /* cyan */
+    color: blue;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 14px 28px;
+    font-size: 20px;
+    font-family: Nunito Black;
+    cursor: pointer;
+    }
+	</style>
+	<style type="text/css">
+    @font-face {
+      font-family: LPMQ Isep Misbah;
+      src: url(/LPMQIsepMisbah.ttf);
+    }
+   
+    @font-face {
+      font-family: Nunito Black;
+      src: url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofAtsGUYevIWzgPDA.woff2);
+    }
+    
+    @font-face {
+      font-family: Nunito Regular;
+      src: url(https://fonts.googleapis.com/css2?family=Nunito&display=swap);
+    }
+    
+    @font-face {
+      font-family: Nunito Bold;
+      src: url(https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap);
+    }
+    
+    im, lpmqim {
+      font-family: LPMQ Isep Misbah;
+    }
+
+    nunitoblack, nubl {
+      font-family: Nunito Black;
+    }
+    
+    nunitoregular, nure {
+      font-family: Nunito Regular;
+    }
+    
+    nunitobold, nubo {
+      font-family: Nunito Bold;
+    }
+
+    /* LPMQ Isep Misbah */
+
+    div.im {
+      font-family: LPMQ Isep Misbah;
+      font-size: 15px;
+    }
+
+    p.im {
+      font-family: LPMQ Isep Misbah;
+      font-size: large;
+    }
+
+    h1.im {
+      font-family: LPMQ Isep Misbah;
+      font-size: 200%;
+    }
+
+    h2.im {
+      font-family: LPMQ Isep Misbah;
+      font-size: 180%;
+    }
+
+    h3.im {
+      font-family: LPMQ Isep Misbah;
+      font-size: 150%;
+    }
+    
+    /* Nunito Black */
+    
+    div.nubl {
+      font-family: Nunito Black;
+      font-size: 15px;
+    }
+
+    p.nubl {
+      font-family: Nunito Black;
+      font-size: large;
+    }
+
+    h1.nubl {
+      font-family: Nunito Black;
+      font-size: 200%;
+    }
+
+    /* Nunito Regular */
+    
+    div.nure {
+      font-family: Nunito Regular;
+      font-size: 15px;
+    }
+
+    p.nure {
+      font-family: Nunito Regular;
+      font-size: large;
+    }
+
+    h3.nure {
+      font-family: Nunito Regular;
+      font-size: 150%;
+    }
+    
+    /* Nunito Bold */
+    
+    div.nubo {
+      font-family: Nunito Bold;
+      font-size: 15px;
+    }
+
+    p.nubo {
+      font-family: Nunito Bold;
+      font-size: large;
+    }
+
+    h2.nubo {
+      font-family: Nunito Bold;
+      font-size: 180%;
+    }
+	</style>
+	<script>
+	    function saveTextAsFile(textToWrite, fileNameToSaveAs)
+    {
+    	var textFileAsBlob = new Blob([textToWrite], {type:'text/plain'}); 
+    	var downloadLink = document.createElement("a");
+    	downloadLink.download = fileNameToSaveAs;
+    	downloadLink.innerHTML = "Download File";
+    	if (window.webkitURL != null)
+    	{
+    		// Chrome allows the link to be clicked
+    		// without actually adding it to the DOM.
+    		downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
+    	}
+    	else
+    	{
+    		// Firefox requires the link to be added to the DOM
+    		// before it can be clicked.
+    		downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+    		downloadLink.onclick = destroyClickedElement;
+    		downloadLink.style.display = "none";
+    		document.body.appendChild(downloadLink);
+    	}
+    
+    	downloadLink.click();
+    }
+	</script>
+	<style>
+#btnDownload {
+  display: none;
+}
+	</style>
+	
+</head>
+<body style="background-color:blue;">
+
+  <!-- heading -->
+  <h2 style="text-align:center; color: cyan; font-family: Nunito Black;" >7 Madinah - Online Text Editor</h2>
+ 
+ <script>
+function status(){
+    var text = "7 Madinah - Online Text Editor";
+    document.forms.form1.text.value = value, text;
+}    
+</script>
+ 
+  <!-- here be our editable area -->
+  <form method="post" name="form1">
+  <textarea onchange="persist(this);" placeholder="Type Your Text Here..." name="text" id="editor" contenteditable="true" style="height: 200px; width: 100%; border: solid; border-width: 1px; padding 15px; color: black; font-family: Nunito Black;"></textarea>
+  
+  <hr />
+  <p style="text-align: center; color: white;"><label style="text-align:center;" class="container"><input type="checkbox" id="captcha" onclick='download();hidec();document.getElementById("hmm").innerHTML = "Captcha Success!    Click The Download Button!"' required="required"><!-- Checkmark --><span class="chekmark"></span></label><label id="hmm">Confirm Humanity! Check For Download</label></p>
+  <script>
+function hidec() {
+document.getElementById("captcha").style.display = "none";
+}
+function download() {
+    document.getElementById("btnDownload").style.display = "block";
+}
+</script>
+  <p style="text-align:center;"><input style="text-align:center;" class="my" type="submit" id="btnDownload" onclick="saveTextAsFile(editor.value,'madinah.txt');" value="Download" /></p>
+ </form>
+ 
+  <!-- Here be our script -->
+
+  <script>
+
+    // If there's anything in the storage
+    //if (localStorage.getItem('text_in_editor') !== null) {
+ 
+        // ...then show it
+        //document.getElementById('editor').innerHTML = localStorage.getItem('text_in_editor');
+      //}
+
+    // listen to key presses
+    //document.addEventListener('keydown', function(e) {
+
+      // once a key is pressed, save whatever's in our box to localstorage
+      //localStorage.setItem('text_in_editor', document.getElementById('editor').innerHTML);
+    //});
+  </script>
+  <script>
+// Save To Localstorage
+setInterval(function() {
+  localStorage["text"] = document.getElementById("editor").innerHTML; // content div
+}, 100);
+  </script>
+ 
+</body>
+<!-- That's all folks -->
+</html>

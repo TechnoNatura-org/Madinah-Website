@@ -1,0 +1,13 @@
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^arsasatria\.my\.id$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.arsasatria\.my\.id$
+RewriteRule ^/?$ "https\:\/\/arsasatria\.my\.id\/" [R=302,L]
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=302]
+RewriteCond %{HTTP_HOST} ^madinah\.my\.id$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.madinah\.my\.id$
+RewriteRule ^room\/1$ "zoommtg\:\/\/zoom\.us\/join\?action\=join\&confno\=87578258443\&pwd\=UmowQktiUVJQL0ErV3ZlQVgzaEg1Zz09" [R=302,L]
+

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en-id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    7 Madinah Class
+  </title>
+  <link href="#" rel="shortcut icon" />
+  <!-- Site Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="http://arsasatria.my.id/logo">
+  <meta property="og:image:type" content="image/png" data-dynamic="true">
+  <meta property="og:image:width" content="960" data-dynamic="true">
+  <meta property="og:image:height" content="720" data-dynamic="true">
+  <meta property="og:description" content="Official Website of Techno 7, Madinah Class">
+  <meta property="og:site_name" content="7 Madinah Class">
+  <meta name="Get CAuth ID" CAuth="Generatoken" madinah.my.id>
+  <meta Web Protect id="huz-cca-id/412.54" enctype="SSL/TLS Ultra Secure">
+
+  <!-- End Site Meta -->
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* The Modal (background) */
+    .modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      padding-top: 100px;
+      /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+      position: relative;
+      color: var(--p-text);
+      top: 100px;
+      background: var(--bg-nav);
+      margin: auto;
+      padding: 0;
+      border: 1px solid #888;
+      width: 80%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 20px;
+      overflow: hidden;
+      -webkit-animation-name: animatetop;
+      -webkit-animation-duration: 0.4s;
+      animation-name: animatetop;
+      animation-duration: 0.4s
+    }
+
+
+    /* Add Animation to popup */
+    @-webkit-keyframes animatetop {
+      from {
+        top: -300px;
+        opacity: 0
+      }
+
+      to {
+        top: 100px;
+        opacity: 1
+      }
+    }
+
+    @keyframes animatetop {
+      from {
+        top: -300px;
+        opacity: 0;
+      }
+
+      to {
+        top: 100px;
+        opacity: 1;
+      }
+    }
+
+
+
+    /* The Close Button */
+    .close {
+      color: white;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .modal-header {
+      padding: 2px 16px;
+      background-color: var(--bg-nav);
+      color: var(--text);
+    }
+
+    .modal-body {
+      padding: 2px 16px;
+    }
+
+    .modal-footer {
+      padding: 2px 16px;
+      background-color: var(--bg-nav);
+      color: var(--text);
+    }
+  </style>
+  <!-- Start Font -->
+  <style type="text/css">
+    @font-face {
+      font-family: LPMQ Isep Misbah;
+      src: url(//arsasatria.my.id/LPMQIsepMisbah.ttf);
+    }
+
+    @font-face {
+      font-family: Nunito Black;
+      src: url(https://fonts.gstatic.com/s/nunito/v13/XRXW3I6Li01BKofAtsGUYevIWzgPDA.woff2);
+    }
+
+    @font-face {
+      font-family: Nunito Regular;
+      src: url(https://fonts.gstatic.com/s/nunito/v13/XRXV3I6Li01BKofINeaBTMnFcQ.woff2);
+    }
+
+    @font-face {
+      font-family: Nunito Bold;
+      src: url(https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap);
+    }
+
+    im,
+    lpmqim {
+      font-family: LPMQ Isep Misbah;
+    }
+
+    nunitoblack,
+    nubl {
+      font-family: Nunito Black;
+    }
+
+    nunitoregular,
+    nure {
+      font-family: Nunito Regular;
+    }
+
+    nunitobold,
+    nubo {
+      font-family: Nunito Bold;
+    }
+
+    /* LPMQ Isep Misbah */
+
+    div.im {
+      font-family: LPMQ Isep Misbah;
+      font-size: 15px;
+    }
+
+    p.im {
+      font-family: LPMQ Isep Misbah;
+      font-size: large;
+    }
+
+    h1.im {
+      font-family: LPMQ Isep Misbah;
+      font-size: 200%;
+    }
+
+    h2.im {
+      font-family: LPMQ Isep Misbah;
+      font-size: 180%;
+    }
+
+    h3.im {
+      font-family: LPMQ Isep Misbah;
+      font-size: 150%;
+    }
+
+    /* Nunito Black */
+
+    div.nubl {
+      font-family: Nunito Black;
+      font-size: 15px;
+    }
+
+    p.nubl {
+      font-family: Nunito Black;
+      font-size: large;
+    }
+
+    h1.nubl {
+      font-family: Nunito Black;
+      font-size: 200%;
+    }
+
+    /* Nunito Regular */
+
+    div.nure {
+      font-family: Nunito Regular;
+      font-size: 15px;
+    }
+
+    p.nure {
+      font-family: Nunito Regular;
+      font-size: large;
+    }
+
+    h3.nure {
+      font-family: Nunito Regular;
+      font-size: 150%;
+    }
+
+    /* Nunito Bold */
+
+    div.nubo {
+      font-family: Nunito Bold;
+      font-size: 15px;
+    }
+
+    p.nubo {
+      font-family: Nunito Bold;
+      font-size: large;
+    }
+
+    h2.nubo {
+      font-family: Nunito Bold;
+      font-size: 180%;
+    }
+  </style>
+  <!-- End Font -->
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/doNotChange.css">
+  <link rel="stylesheet" href="/mediaQuery.css">
+  <link rel="stylesheet" href="/animation.css">
+
+
+
+  <script defer src="app.js"></script>
+</head>
+
+
+<body class="light">
+  <!-- Navbar -->
+
+  <nav class="navbar">
+    <ul class="navbar-nav">
+      <a href="">
+        <h3>7 Madinah Class</h3>
+      </a>
+
+
+      <div class="list-nav-links">
+        <a href="#">
+          <li class="nav-item" style="margin: 0 20px;">Home</li>
+        </a>
+
+        <a href="https://madinah.my.id">
+          <li class="nav-item" style="margin: 0 20px;">Reload</li>
+        </a>
+
+        <a href="#" id="robot">
+          <li class="nav-item" style="margin: 0 20px;">Leo Assistant</li>
+        </a>
+        <!-- Dropdown -->
+        <li class="nav-item has-dropdown">
+          <a href="#" style="margin: 0 20px;">Theme</a>
+          <ul class="dropdown">
+            <li class="dropdown-item">
+              <a id="light" href="#">light</a>
+            </li>
+            <li class="dropdown-item">
+              <a id="dark" href="#">dark</a>
+            </li>
+            <li class="dropdown-item">
+              <a id="solar" href="#">solarize</a>
+            </li>
+          </ul>
+        </li>
+      </div>
+
+    </ul>
+  </nav>
+
+  <header style="margin-bottom: 150px">
+    <h1>Hello There, We are Madinah Class!</h1>
+    <a href="#about">
+      <div class="mouse"></div>
+    </a>
+
+    <div>
+      <p>Grade 7, Madinah | Techno Natura</p>
+    </div>
+  </header>
+  <div id="rbtmdl" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Welcome To Leo Assistant!</h2>
+      </div>
+      <div class="modal-body">
+        <p>How Can I Help You?</p>
+        <p>Please Enter a Command below...</p>
+        <input id="rbtInput" placeholder="Enter Command Here!" type="text"><button
+          onclick="myFunction()">Submit</button>
+      </div>
+      <p id="rbtext"></p>
+
+      <div class="modal-footer">
+        <h3>https://madinah.my.id</h3>
+      </div>
+    </div>
+
+  </div>
+
+  <main>
+    <section class="our-teams">
+      <div class="title-parent" style="padding-left: 50px;">
+        <h2 class="title" style="position: relative;">Our Team</h2>
+      </div>
+      <div class="parent-of-parent-cards">
+        <div class="parent-of-cards">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1580638858617-ed8f4c3fa6d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1123&q=80"
+              alt="" style="width: 100%; height: 40%;" class="bg-on-card">
+            <div class="profile">
+              <img
+                src="https://cdn5.telesco.pe/file/VXyq_iRM9eGlxnuArS_MGfGCG4dAxmiXkIeJvH9un7RPH7RRnX3UCLhnHko70OyzDHNeopd7ZJbuNQxyus9kFNME8aKTkLu8-otfNn_G08msLtUbwda_9dCRPQDeHr9-3m8y_1M5vikzrZssqTaToy7un5gWJrRo7XSwz7Vc92-vVARfW0P0ZK3ay6_buHaMLtE2jPcpp8Rg4Mo_38GPlDchufuVRbfuTqQz8OBDaQGqkHcRS2ry9RU_ypt4OX3CEE-A2oDV3APhN9pM8_GBXuvlFMi2PsHLbmWtniuxuo6fMJHfeHhm26eol5l3_jJlP1UaPqtbR21Bb6WNPleWmw.jpg"
+                alt="" style="width: 100%; left: -60px; height: 110%; top: -40px;">
+            </div>
+            <div class="information">
+              <h2 style="color: var(--text); font-size: 24px;">Arsa</h2>
+              <p style="margin-top: -10px; color: var(--p-text); font-size: 14px;">Programmer</p>
+              <p style="text-align: center; margin-top: -5px; color: var(--text);"></p>
+            </div>
+            <a href="" class="contact-on-card">Contact</a>
+            <div class="social-media-icon-on-card" style="z-index: 999;">
+              <a href="https://cloud.arsasatria.my.id"><i class="fa fa-cloud"></i></a>
+              <a href="mailto:arsa@arsasatria.my.id"><i class="fa fa-envelope-o"></i></a>
+              <a href="https://arsasatria.my.id"><i class="fa fa-link"></i></a>
+              <a href="//t.me/ArsaSatria"><i class="fa fa-telegram"></i></a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1580638858617-ed8f4c3fa6d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1123&q=80"
+              alt="" style="width: 100%; height: 40%;" class="bg-on-card">
+            <div class="profile">
+              <img
+                src="https://cdn5.telesco.pe/file/ZyuScU4Cmpb8u-INDS19J55UgW9z2ZS-_EWzx54sfjFsOyuWtyuoeB66b2ghRHwky0ULIMvixR3Twd4i8Dx0zO2OE0Erh1YnJTn4FGd6eYbMA3SDBGYGWQ6zbXtytLVjK_oGmuxEB1WyAtAFdsjxuT0tg_oUSLov5b9zsEIQ3AvGTPpn2KE4-CfMOTDlZV2JhU2HxI6Ri5Rwx0BkaCDoJfxPlUF1WOttNSIJsY6kwz2mc-URCyvMm3annMgyoyfIN-ujVgx0qdCteBd9VldJh5j1HHqOvnHj24IkXPQP1zGyxX32dLZF8GJ3QMlFOMTJTxW8cM13wPvlT1cx8D82xA.jpg "
+                alt="">
+            </div>
+            <div class="information">
+              <h2 style="color: var(--text); font-size: 24px;">Yodha</h2>
+              <p style="margin-top: -10px; color: var(--p-text); font-size: 14px;">Video Editor</p>
+              <p style="text-align: center; margin-top: -5px; color: var(--text); padding: 0 10px; font-size: 15px;">
+                "Janganlah Menyerah
+                Karena Masa Depan
+                Menunggu kalian"</p>
+            </div>
+            <a href="" class="contact-on-card">Contact</a>
+            <div class="social-media-icon-on-card" style="z-index: 999;">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-github"></i></a>
+              <a href=""><i class="fa fa-codepen"></i></a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1580638858617-ed8f4c3fa6d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1123&q=80"
+              alt="" style="width: 100%; height: 40%;" class="bg-on-card">
+            <div class="profile">
+              <img
+                src="https://previews.dropbox.com/p/thumb/AA5vDSlxvv9b3gsHjG9YaskIVGXkAfDR_xpbwZsOVVIhC95dbFnnofyyax1BL8R4pQfrtiQAH5Hw9HZH9URPwCp3D83E58dXfdBfyx2qYYwb1b1NXN8TM5_PWe6dckbmTUtSiLCwl13nZlIkaEIdnCrE35SYj7kbbKJRtcDy0u0ET8RJmOFKJ_bbtc2HAu5y6KPBth6m30gT9oAxzzVjUtWrxWpPBo88F1ilz5_z9heE-Evjzoqcu_K910VvBzNNE3mSOm2NuzXLM0960XDFMEKi7F5dYFQ2ckhPm26udqQJEij5i-IRifBYkI841K9nH3Aw-PT3S1lQW0vnR4p51k55gZbbpFCqyBrcLY_lERC9nQ/p.jpeg?fv_content=true&size_mode=5"
+                alt="" style="height: 160%; top: -55px; right: -35px;">
+            </div>
+            <div class="information">
+              <h2 style="color: var(--text); font-size: 24px;">Sasa</h2>
+              <p style="margin-top: -10px; color: var(--p-text); font-size: 14px;">Wartawan Televisi/Reporter</p>
+              <p style="text-align: center; margin-top: -5px; color: var(--text); padding: 0 10px; font-size: 15px;">
+                "Semoga level 7
+                madinah kompak
+                selaluuu"</p>
+            </div>
+            <a href="" class="contact-on-card">Contact</a>
+            <div class="social-media-icon-on-card" style="z-index: 999;">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-github"></i></a>
+              <a href=""><i class="fa fa-codepen"></i></a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1580638858617-ed8f4c3fa6d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1123&q=80"
+              alt="" style="width: 100%; height: 40%;" class="bg-on-card">
+            <div class="profile">
+              <img
+                src="https://previews.dropbox.com/p/thumb/AA6maBiZJ_r77ghpB83kJepFjtkhoAM0zJyzTRvkIuoKDYLONX81MN-qtgCInxN0Pdacbnitf1DSIpjtp5UBoodjeXs1PDam3cOGXYARYvMuYuIwfzk-mHy74L9CjAtHW1pV1oCuypjTcYxtSuU_UQPVtBSWLLzQqQkmVtRbGLO0OiQ4sr3L3KSwLHVLokMlDctSPwqjc16nEH-UtqhgukOelQdw6r0aksGoDjQRUbKcL7lELnAwelZ5g43adlIxIYG07ystLpgkvAvQurdnYLbIMqSqaoxmu4j6mZ7LTx_0v2cXl9JuMPFaJSjYclR31DMH4cFnPuQU7BMXldMMotbLw14lxIdF-zHxuwrehLowCg/p.jpeg?size=1280x960&size_mode=3"
+                alt="" style="width: 120%; height: 170%; top: -70px;">
+            </div>
+            <div class="information">
+              <h2 style="color: var(--text); font-size: 24px;">Abi</h2>
+              <p style="margin-top: -10px; color: var(--p-text); font-size: 14px;">Pilot</p>
+              <p style="text-align: center; margin-top: -5px; color: var(--text); padding: 0 10px; font-size: 15px;">
+                "Susah di awal,
+                bahagia di akhir"</p>
+            </div>
+            <a href="" class="contact-on-card">Contact</a>
+            <div class="social-media-icon-on-card" style="z-index: 999;">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-github"></i></a>
+              <a href=""><i class="fa fa-codepen"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div id="parent-showmore-of-parent-cards" style="display: none;">
+          <div class="parent-of-cards">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1580638858617-ed8f4c3fa6d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1123&q=80"
+                alt="" style="width: 100%; height: 40%;" class="bg-on-card">
+              <div class="profile">
+                <img
+                  src="https://cdn5.telesco.pe/file/VXyq_iRM9eGlxnuArS_MGfGCG4dAxmiXkIeJvH9un7RPH7RRnX3UCLhnHko70OyzDHNeopd7ZJbuNQxyus9kFNME8aKTkLu8-otfNn_G08msLtUbwda_9dCRPQDeHr9-3m8y_1M5vikzrZssqTaToy7un5gWJrRo7XSwz7Vc92-vVARfW0P0ZK3ay6_buHaMLtE2jPcpp8Rg4Mo_38GPlDchufuVRbfuTqQz8OBDaQGqkHcRS2ry9RU_ypt4OX3CEE-A2oDV3APhN9pM8_GBXuvlFMi2PsHLbmWtniuxuo6fMJHfeHhm26eol5l3_jJlP1UaPqtbR21Bb6WNPleWmw.jpg"
+                  alt="" style="width: 100%;">
+              </div>
+              <div class="information">
+                <h2 style="color: var(--text); font-size: 24px;">Arsa</h2>
+                <p style="margin-top: -10px; color: var(--p-text); font-size: 14px;">Programmer</p>
+                <p style="text-align: center; margin-top: -5px; color: var(--text);"></p>
+              </div>
+              <a href="" class="contact-on-card">Contact</a>
+              <div class="social-media-icon-on-card" style="z-index: 999;">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-github"></i></a>
+                <a href=""><i class="fa fa-codepen"></i></a>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1580638858617-ed8f4c3fa6d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1123&q=80"
+                alt="" style="width: 100%; height: 40%;" class="bg-on-card">
+              <div class="profile">
+                <img
+                  src="https://previews.dropbox.com/p/thumb/AA6Z5YSbmwgqmJ0-hBowziVBp1p7AqIc6dayr7zi4e6zrGS0dxspu9rNHmKuAYv5mVmjkVkc_Dw3ymPoeg_AmfE5rGJs8RfQDczCBIeiGyFqjmO2wIOceDu16CgF4732ucYpBH46SiP6s84FmN1WpIzPznyVIAto1YwBxGZi2mp9J6A2rXcphyALcHOU1kzBJI_bCiWOY0AqvD492iif1bg29D6ynTw8d-d-1aNYNdaDtCwhZLWs7bv0LIlUlAqVPNxaCnayksrZ1R174KbFvs0P0moISw3v1rIZdKiGyKL2hasnsCRLFnBrJD9PrE-ZhgYFkxVeOXGt3p0L6W7Pi6l_r3Y2JRC7GG9gIK9eIsCNNg/p.jpeg?fv_content=true&size_mode=5"
+                  alt="" style="left: -20px;">
+              </div>
+              <div class="information">
+                <h2 style="color: var(--text); font-size: 24px;">Kayla</h2>
+                <p style="margin-top: -10px; color: var(--p-text); font-size: 14px;">Membuat Robot</p>
+                <p
+                  style="text-align: center; margin-top: -5px; color: var(--text); padding: 0 10px; font-size: 13.5px;">
+                  "Kamu tidak perlu menjadi hebat untuk memulai sesuatu. Lakukan sekarang dan jangan pernah menunda
+                  karena kesempatan mungkin tidak datang dua kali"</p>
+              </div>
+              <a href="" class="contact-on-card">Contact</a>
+              <div class="social-media-icon-on-card" style="z-index: 999;">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-github"></i></a>
+                <a href=""><i class="fa fa-codepen"></i></a>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1580638858617-ed8f4c3fa6d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1123&q=80"
+                alt="" style="width: 100%; height: 40%;" class="bg-on-card">
+              <div class="profile">
+                <img
+                  src="https://cdn5.telesco.pe/file/Xk99AR_tNlo1L32B6T8V8Rha-9c0HbhvHay--8RqRsT4DiLCxxmY0_lJea8Cr_Ll4YBojPxsQ5KS66ae6CJo7sDRSzOevdv4YI1rLlAw1TWrKf3wWrbBSSmVZKmWHcGOJPcMZgnpq1JQNfTJG6qz3YrFHKGypNP6_WPE4xXjB56GD4jwNW6gaK9iSfsGKcjvoYaOzhgbMubYG-_MVixIZbddniAxpjMYQtYl8GaYnOYLnhUx2U_8sJGEyTwOsXwzK0qFmXG0pHMebziIGW4L17Uhq2IXyE4lxLqZLuX3CgCb2OUH_xjAL5Aa4y3A5OklYSCqzYQIU6bUzYpOB2NnSw.jpg"
+                  alt="" style="width: 100%;">
+              </div>
+              <div class="information">
+                <h2 style="color: var(--text); font-size: 24px;">Aldhan</h2>
+                <p style="margin-top: -10px; color: var(--p-text); font-size: 12px; text-align: center;">FullStack
+                  Developer | Membuat
+                  perusahaan technology</p>
+                <p style="text-align: center; margin-top: -5px; color: var(--text); padding: 0 10px; font-size: 15px;">
+                  "Chill"</p>
+              </div>
+              <a href="" class="contact-on-card">Contact</a>
+              <div class="social-media-icon-on-card" style="z-index: 999;">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="https://github.com/Aldhanekaa" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="https://codepen.io/aldhaneka" target="_blank"><i class="fa fa-codepen"></i></a>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1580638858617-ed8f4c3fa6d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1123&q=80"
+                alt="" style="width: 100%; height: 40%;" class="bg-on-card">
+              <div class="profile">
+                <img src="https://www.shareicon.net/data/128x128/2016/05/24/770117_people_512x512.png" alt=""
+                  style="width: 100%;">
+              </div>
+              <div class="information">
+                <h2 style="color: var(--text); font-size: 24px;">Nabil</h2>
+                <p style="margin-top: -10px; color: var(--p-text); font-size: 14px;">Pemain Basket</p>
+                <p style="text-align: center; margin-top: -5px; color: var(--text); padding: 0 10px; font-size: 15px;">
+                  "saling akrab aja kedepan nya dan juga gk ada permasalahan kalau bisa"</p>
+              </div>
+              <a href="" class="contact-on-card">Contact</a>
+              <div class="social-media-icon-on-card" style="z-index: 999;">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-github"></i></a>
+                <a href=""><i class="fa fa-codepen"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button onclick="showMoreBtn_showLessBtn()" id="showMoreBtn" class="showMoreBtn">Show More</button>
+
+    </section>
+
+
+    <div style="
+    position: fixed; 
+    bottom: 0; 
+    right: 20px; 
+    z-index: 999;
+    " class="clock">
+      <h3 style="color:var(--text);font-family: Nunito Black" id="clock5387"></h3>
+    </div>
+
+  </main>
+
+  <script>
+    function startTime() {
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('clock5387').innerHTML =
+        h + ":" + m + ":" + s;
+      var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+      if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+      return i;
+    }
+  </script>
+  <script>
+    var myVar = setInterval(myTimer, 1000);
+    function myTimer() {
+      var d = new Date();
+      document.getElementById("clock5387").innerHTML = d.toLocaleTimeString();
+    }</script>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("rbtmdl");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("robot");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+  <script>
+    function myFunction() {
+      var letter = document.getElementById("rbtInput").value;
+      var text;
+
+      // If the letter is "command"
+      if (letter === "zoom") {
+        location.href = "https://zoom.us/j/87578258443#success";
+
+      } if (letter === "arsa") {
+        location.href = "https://arsasatria.my.id";
+
+      } if (letter === "aldhan") {
+        location.href = "https://bit.ly/aldhanekawebsite";
+
+      } if (letter === "classroom") {
+        location.href = "https://classroom.google.com/u/0/c/MTE4NDI1MDc5NDY0";
+
+        // If the letter is "b" or "d"
+      } else if (letter === "b" || letter === "d") {
+        text = "Close, but not close enough.";
+
+        // If the letter is anything else
+      } else {
+        text = "Sorry, Its Not A Command..";
+      }
+      document.getElementById("rbtext").innerHTML = text;
+    }
+  </script>
+</body>
+
+</html>
